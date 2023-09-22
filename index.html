@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,9 +83,9 @@
                         <div class="statement_box">
                             <h2>Vi bør ha høye skatter i Norge, for å ha råd til flere fellesgoder.</h2>
                             <input type="radio" name="statement1" value="høyre,frp"> Helt uenig
-                            <input type="radio" name="statement1" value="ap"> Litt uenig
-                            <input type="radio" name="statement1" value="mdg"> Nøytral
-                            <input type="radio" name="statement1" value="sp"> Litt enig
+                            <input type="radio" name="statement1" value="ap,venstre"> Litt uenig
+                            <input type="radio" name="statement1" value="mdg,krf"> Nøytral
+                            <input type="radio" name="statement1" value="sp,sv"> Litt enig
                             <input type="radio" name="statement1" value="rødt"> Helt enig
                         </div>
                     </div>
@@ -106,9 +106,63 @@
                     </div>
                 </div>
             </div>
-        
-            <!-- Add more statements here -->
+
+            <div class="placement_box">
+                <div class="info_box">
+                    <div class="info_box_stuff">
+                        <div class="statement_box">
+                            <h2>Vi trenger flere private alternativ i blant annet helsesektoren for å få flere valg for pasienter.</h2>
+                            <input type="radio" name="statement3" value=""> Helt uenig
+                            <input type="radio" name="statement3" value=""> Litt uenig
+                            <input type="radio" name="statement3" value=""> Nøytral
+                            <input type="radio" name="statement3" value=""> Litt enig
+                            <input type="radio" name="statement3" value=""> Helt
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="placement_box">
+                <div class="info_box">
+                    <div class="info_box_stuff">
+                        <div class="statement_box">
+                            <h2>Vi trenger flere private alternativ i blant annet helsesektoren for å få flere valg for pasienter.</h2>
+                            <input type="radio" name="statement4" value=""> Helt uenig
+                            <input type="radio" name="statement4" value=""> Litt uenig
+                            <input type="radio" name="statement4" value=""> Nøytral
+                            <input type="radio" name="statement4" value=""> Litt enig
+                            <input type="radio" name="statement4" value=""> Helt
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="placement_box">
+                <div class="info_box">
+                    <div class="info_box_stuff">
+                        <div class="statement_box">
+                            <h2>Vi trenger flere private alternativ i blant annet helsesektoren for å få flere valg for pasienter.</h2>
+                            <input type="radio" name="statement5" value=""> Helt uenig
+                            <input type="radio" name="statement5" value=""> Litt uenig
+                            <input type="radio" name="statement5" value=""> Nøytral
+                            <input type="radio" name="statement5" value=""> Litt enig
+                            <input type="radio" name="statement5" value=""> Helt
+                        </div>
+                    </div>
+                </div>
+            </div>statement4
+
         </form>
+
+        <div class="btn_box">
+            <button class="show_results" id="visResultatBtn" onclick="calculatePoints()">Vis Resultat</button>
+        </div>
+
+        <div class="results_box">
+            <div id="formResults" class="">
+
+            </div>
+        </div>
         
         
     </main>
