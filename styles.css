@@ -1,7 +1,8 @@
 :root {
-    background-image: url(Assets/martin-martz-UnfxhYIgHmc-unsplash.jpg);
+    background-image: url(Assets/mikita-karasiou-HO6aBrYi3kE-unsplash.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
     --main-text-color: whitesmoke;
     font-size: 20px;
 }
@@ -50,7 +51,7 @@
     height: 31rem;
     flex-shrink: 0;
     border-radius: 1.6rem;
-    opacity: 0.7;
+    opacity: 0.8;
     background: #D9D9D9;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 2rem; 
@@ -59,6 +60,12 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.statement_box_choises {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 3rem 0;
 }
 
 .results_box {
@@ -75,7 +82,7 @@
     align-items: center;
     background-color: #d9d9d9;
     border-radius: 1.6rem;
-    opacity: 0.7;
+    opacity: 0.8;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     margin: 3rem 0 0 0;
     padding: 1rem;
@@ -92,4 +99,37 @@
     background: #d9d9d9;
     color: inherit;
     border-radius: 1.6rem;
+    cursor: pointer;
 }
+
+.radio_image {
+    width: 2rem; /* Set the width of your custom image */
+    height: 2rem; /* Set the height of your custom image */
+    background-size: cover; /* Scale the image to fit */
+    margin-bottom: 5px; /* Add spacing between the image and text */
+}
+
+.radio_text {
+    font-size: 1.5rem; /* Customize text font size */
+}
+
+/* Hide the actual radio input */
+input[type="radio"] {
+    display: none;
+}
+
+.radio_label {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    cursor: pointer;
+    margin: 2rem;
+}
+
+/* Style for checked radio buttons */
+.radio_label input[type="radio"]:checked + .radio_image {
+    border: 6px solid #00bcd4; /* Add a border around the image */
+    border-radius: 50%; /* Make it a circle */
+    padding: 2px; /* Optional: Add padding to separate the border from the image */
+}
+
